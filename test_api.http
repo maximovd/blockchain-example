@@ -1,0 +1,20 @@
+
+### Get all chains
+GET http://localhost:5000/chain
+Accept: application/json
+
+### Create new transaction block
+POST http://localhost:5000/transactions/new
+Content-Type: application/json
+
+{
+ "sender": "d4ee26eee15148ee92c6cd394edd974e",
+ "recipient": "someone-other-address",
+ "amount": 5
+}
+
+### Try mining block
+GET http://localhost:5000/mine
+Accept: application/json
+
+
